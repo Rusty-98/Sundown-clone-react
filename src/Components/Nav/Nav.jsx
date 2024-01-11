@@ -1,0 +1,21 @@
+import './Nav.css';
+
+const Nav = () => {
+  return (
+    <div className='bg-[#EFEAE3] relative z-10 flex justify-between p-5'>
+        <div className='w-1/5'>
+            <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="" />
+        </div>
+        <div className='w-[28%] flex items-center justify-evenly text-2xl'>
+            <h2 className=' w-[25%] text-center border-2 border-black rounded-[50px] p-1 relative overflow-hidden butt'><a href="#">Work</a></h2>
+            <h2 className=' w-[25%] text-center border-2 border-black rounded-[50px] p-1 relative overflow-hidden butt'><a href="#">Studio</a></h2>
+            <h2 className=' w-[25%] text-center border-2 border-black rounded-[50px] p-1 relative overflow-hidden butt'><a href="#">Contact</a></h2>
+        </div>
+    </div>
+  )
+}
+
+export default Nav
+
+
+// eniviroment exp content 

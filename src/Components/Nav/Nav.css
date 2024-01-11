@@ -1,0 +1,30 @@
+.butt::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: -100%;
+    background-color: black;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+.butt:hover::after{
+    bottom: 0;
+    border-radius: 0%;
+}
+
+a{
+    text-decoration: none;
+    transition: all ease 0.5s;
+
+}
+
+.butt:hover a{
+    color: aliceblue;    
+}

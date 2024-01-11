@@ -1,0 +1,34 @@
+.hell::after {
+    content: "";
+    background-color: rgba(255, 119, 0, 0.856);
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.hell:hover::after {
+    bottom: 0;
+}
+
+/* .fixe::after {
+    content: "";
+    background-color: red;
+    background-image: url("../../public/1.webp");
+    object-fit: contain;
+    bottom: 100%;
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    display: none;
+}
+
+.fixe:hover::after {
+    display: block;
+} */

@@ -1,0 +1,21 @@
+.scroll{
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.bar::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}

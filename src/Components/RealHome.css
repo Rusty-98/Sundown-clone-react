@@ -1,0 +1,13 @@
+@font-face {
+    font-family: hello;
+    src: url(../../public/font/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.ttf);
+}
+
+*{
+    font-family: hello;
+}
+
+.las::-webkit-scrollbar{
+    display: none;
+}
+
