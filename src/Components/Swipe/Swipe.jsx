@@ -1,20 +1,24 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { useState } from 'react';
 
 const Swipe = () => {
+
+    const [close, setClose] = useState(false);
+
     return (
         <>
-            <div className='w-full h-[60vh] relative bg-[#EFEAE3]'>
+            <div className={close ? 'w-full h-[60vh] relative bg-[#EFEAE3]' : 'w-full h-[45vh] -mt-16 relative bg-[#EFEAE3]'}>
                 <Swiper
-                    spaceBetween={60}
-                    slidesPerView={3}
+                    spaceBetween={close ? 60 : 35}
+                    slidesPerView={close ? 3 : 1.5}
                     className='pt-20 pl-16'
                 >
                     {
                         link.map((image,index) => (
                             <SwiperSlide key={index} className=' border-l-2 border-gray-400 p-5'>
                                 <img src={image} alt="Logo" className='mt-4 mb-4' />
-                                <div className='text-lg font-thin text-[#53504f]'>
+                                <div className={close ? 'text-lg font-thin text-[#53504f]': 'text-sm font-thin text-[#53504f]'}>
                                     {desc[index]}
                                 </div>
                             </SwiperSlide>
