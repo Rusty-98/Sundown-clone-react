@@ -1,17 +1,6 @@
-import { useEffect, useState } from 'react';
 import './Nav.css';
 
-const Nav = () => {
-
-  const [close, setClose] = useState(false);
-
-  // useEffect(() => {
-  //   const handleClose = () => {
-  //     if(window.screen.width <= "768px"){
-  //       setClose(false);
-  //     }
-  //   }
-  // },[close, setClose,]);
+const Nav = ({close}) => {
 
   return (
     <div className='bg-[#EFEAE3] relative z-10 flex justify-between p-5'>

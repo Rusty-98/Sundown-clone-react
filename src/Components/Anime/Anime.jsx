@@ -1,8 +1,4 @@
-import { useState } from "react"
-
-const Anime = () => {
-
-  const [close, setClose] = useState(false);
+const Anime = ({close}) => {
 
   return (
     <div className="max-w-full relative">

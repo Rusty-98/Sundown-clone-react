@@ -7,17 +7,18 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { FaRegCopyright } from "react-icons/fa";
 import Anime from './Anime/Anime';
 import { useState } from "react";
+import { useResponse } from "../Hooks/useResponse";
 
 const RealHome = () => {
 
-    const [close, setClose] = useState(false);
+    const { close } = useResponse();
 
     return (
         <div className='las w-full h-full absolute bg-black overflow-y-scroll -z-20 overflow-x-hidden'>
             {<Home />}
-            {<Last />}
+            {<Last close={close} />}
             <div className={close ? 'w-full h-[87%] fixed bottom-0 -z-[2] text-white' : 'w-full h-[53vh] fixed bottom-0 -z-[2] text-white'}>
-                {<Anime />}
+                {<Anime close={close} />}
                 <div className={close ? 'w-[87%] mr-auto ml-auto flex items-center justify-between' : 'w-[90%] mr-auto ml-auto flex flex-col'}>
                     <div className={close ? 'text-4xl font-bold tracking-tighter' : 'text-3xl font-bold tracking-tighter'}>
                         <h1>Work</h1>

@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react';
-
-const Base = () => {
-
-    const [close, setClose] = useState(false);
+const Base = ({close}) => {
 
     return (
         <div className={close ? `flex min-h-[650px] ml-10 mr-10 border-b-2 border-gray-500` : `flex flex-col h-[45vh] ml-6 mr-6 border-b-2 border-gray-500`}>
