@@ -8,17 +8,17 @@ const Swipe = () => {
 
     return (
         <>
-            <div className={close ? 'w-full h-[60vh] relative bg-[#EFEAE3]' : 'w-full h-[45vh] -mt-16 relative bg-[#EFEAE3]'}>
+            <div className={close ? 'w-full h-[60vh] relative bg-[#EFEAE3]' : 'w-full h-[48vh] -mt-16 relative bg-[#EFEAE3]'}>
                 <Swiper
-                    spaceBetween={close ? 60 : 35}
+                    spaceBetween={close ? 60 : 30}
                     slidesPerView={close ? 3 : 1.5}
                     className='pt-20 pl-16'
                 >
                     {
                         link.map((image,index) => (
                             <SwiperSlide key={index} className=' border-l-2 border-gray-400 p-5'>
-                                <img src={image} alt="Logo" className='mt-4 mb-4' />
-                                <div className={close ? 'text-lg font-thin text-[#53504f]': 'text-sm font-thin text-[#53504f]'}>
+                                <img src={image} alt="Logo" className={close ? 'mt-4 mb-4' : 'mb-4'} />
+                                <div className={close ? 'text-lg font-thin text-[#53504f]': 'text-sm w-[105%] font-thin text-[#53504f]'}>
                                     {desc[index]}
                                 </div>
                             </SwiperSlide>
