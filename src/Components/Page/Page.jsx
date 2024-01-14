@@ -14,7 +14,7 @@ const Page = ({close}) => {
                     </h1>
                 </div>
             </div>
-            <Sec2 />
+            <Sec2 close={close} />
         </div>
     )
 }
