@@ -1,10 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { useState } from 'react';
 
-const Swipe = () => {
-
-    const [close, setClose] = useState(false);
+const Swipe = ({close}) => {
 
     return (
         <>

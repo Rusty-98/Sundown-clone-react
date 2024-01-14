@@ -1,9 +1,6 @@
-import { useState } from "react";
 import "./Scroll.css";
 
-const ScrollText = () => {
-
-    const [close, setClose] = useState(false);
+const ScrollText = ({close}) => {
 
     return (
         <div className={close ? "p-3 whitespace-nowrap overflow-x-auto bg-[#EFEAE3] bar mt-[8vw] mb-32 font-bold" : "p-3 whitespace-nowrap overflow-x-auto bg-[#EFEAE3] bar mt-[10vw] mb-8 font-bold"}>

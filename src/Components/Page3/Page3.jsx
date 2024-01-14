@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react"
 
-const Page3 = () => {
+const Page3 = ({close}) => {
 
   const [sele, setSele] = useState("Design");
   const [desc, setDesc] = useState("Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.");
   const [pic, setpic] = useState("../../public/img3.webp");
-  const [close, setclose] = useState(false);
-
+  
   const handleClick = (e) => {
     setSele(e);
   }
