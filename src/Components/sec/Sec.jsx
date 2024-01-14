@@ -8,7 +8,7 @@ const Sec = ({close}) => {
         <div className="absolute -z-10 -top-20 right-0">
             <div className={close ? "rounded-[50%] bg-[#fe330a] absolute hero w-[40vw] h-[40vw] filter blur-2xl" : "rounded-[50%] bg-[#fe330a] absolute hero w-[50vw] h-[70vw] filter blur-2xl"}></div>
             <div className={close ? "rounded-[50%] bg-[#fe330a] absolute right-10 hero2 w-[40vw] h-[40vw] filter blur-2xl" : "rounded-[50%] bg-[#fe330a] absolute right-10 hero2 w-[50vw] h-[50vw] filter blur-2xl"}></div>
-            <div className={close ? "rounded-[50%] bg-[#fe330a] w-[30vw] h-[30vw] filter blur-2xl":"rounded-[50%] bg-[#fe330a] w-[30vw] h-[40vw] filter blur-2xl"}></div>
+            <div className={close ? "rounded-[50%] bg-[#fe330a] w-[30vw] h-[30vw] filter blur-2xl":"rounded-[50%] bg-[#fe330a] hero2 w-[30vw] h-[40vw] filter blur-2xl"}></div>
         </div>
     </div>
   )
